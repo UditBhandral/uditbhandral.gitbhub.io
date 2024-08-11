@@ -1,0 +1,170 @@
+/* General Styling */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000; /* Black background */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px; /* Increased padding */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 25px; /* Increased margin */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+    padding: 10px 15px; /* Added padding */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: #fff; /* White text on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+main {
+    padding-top: 80px; /* Adjusted for increased header height */
+}
+
+.section {
+    padding: 60px 20px;
+    margin: 20px 0; /* Added margin for spacing between sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    background-color: #222; /* Slightly lighter black background for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.summary-section {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+    padding: 0;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Added padding for spacing */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 300px; /* Larger profile picture */
+    height: 300px;
+    border: 5px solid #fff; /* White border for profile picture */
+    margin-right: 30px; /* Increased margin */
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.profile-info {
+    max-width: calc(100% - 320px); /* Adjust width to fit remaining space */
+}
+
+.profile-info h1 {
+    font-size: 3em; /* Larger font size for name */
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    margin-bottom: 15px; /* Increased spacing between paragraphs */
+}
+
+button.collapsible {
+    background-color: #fff; /* White background for collapsible buttons */
+    color: #000;
+    border: none;
+    padding: 15px; /* Increased padding */
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+button.collapsible:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    padding: 20px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-top: none;
+    background-color: #333; /* Dark background for content areas */
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px; /* Increased padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 10px 0; /* Increased margin */
+}
+
+footer a {
+    color: #ff0000; /* Red color for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Specific Section Styles */
+.skills-list, .job, .education-item, .project-item {
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners for items */
+    background-color: #444; /* Dark background for items */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Light shadow for items */
+}
+
+.skills-list li, .job, .education-item, .project-item {
+    margin-bottom: 15px; /* Spacing between items */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.skills-list li:hover, .job:hover, .education-item:hover, .project-item:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
